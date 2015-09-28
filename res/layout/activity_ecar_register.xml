@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+                android:orientation = "vertical"
+                android:layout_width = "match_parent"
+                android:layout_height = "match_parent">
+
+    <include layout = "@layout/header_bar_general"/>
+
+    <EditText
+            android:id = "@+id/et_ecar_local_number"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_below = "@id/general_header_titlebar"
+            style = "@style/edit_type"
+            android:hint = "@string/write_local_phone"
+            android:inputType = "phone"
+            android:layout_gravity = "center_vertical"
+            android:drawableLeft = "@drawable/phone_number_icon1"
+            android:drawablePadding = "10dp"/>
+
+    <TextView
+            android:id = "@+id/tv_register_ecar"
+            android:onClick = "registerEcar"
+            android:clickable = "true"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:text = "@string/registry"
+            android:gravity = "center"
+            android:layout_gravity = "center_horizontal"
+            android:layout_marginTop = "18dp"
+            android:layout_below = "@id/et_ecar_local_number"
+            style = "@style/big_button_type"/>
+
+    <ImageView
+            android:id = "@+id/iv_ecar_logo"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:background = "@drawable/ecard_logo"
+            android:layout_centerHorizontal = "true"
+            android:layout_marginTop = "150dp"/>
+
+    <ImageView
+            android:id = "@+id/iv_fc_open"
+            android:onClick = "callEcar"
+            android:clickable = "true"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_centerHorizontal = "true"
+            android:layout_alignParentBottom = "true"
+            android:layout_marginBottom = "44dp"
+            android:background = "@drawable/selector_hand_press"/>
+
+</RelativeLayout>

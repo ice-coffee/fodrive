@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android = "http://schemas.android.com/apk/res/android"
+        android:orientation = "vertical"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:background = "@color/app_bg">
+
+    <include layout = "@layout/header_bar_general"/>
+
+    <EditText
+            android:id = "@+id/et_fb_exmail"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:singleLine = "true"
+            android:maxLength = "20"
+            android:layout_marginTop = "18dp"
+            android:layout_marginLeft = "14dp"
+            android:layout_marginRight = "14dp"
+            android:hint = "@string/exmail_phone"
+            style = "@style/edit_type"/>
+
+    <EditText
+            android:id = "@+id/et_fb_content"
+            android:layout_width = "match_parent"
+            android:layout_height = "301dp"
+            android:hint = "@string/feed_back_content"
+            style = "@style/edit_type"
+            android:maxLines = "15"
+            android:inputType = "textMultiLine"
+            android:gravity = "top"
+            android:layout_marginTop = "18dp"
+            android:layout_marginLeft = "14dp"
+            android:layout_marginRight = "14dp"/>
+
+    <TextView
+            android:onClick = "submitContent"
+            android:clickable = "true"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:text = "@string/feed_back"
+            style = "@style/big_button_type"
+            android:layout_gravity = "center_horizontal"
+            android:gravity = "center"
+            android:layout_marginTop = "18dp"/>
+
+</LinearLayout>

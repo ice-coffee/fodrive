@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android = "http://schemas.android.com/apk/res/android"
+        android:id = "@+id/general_header_titlebar"
+        android:background = "@color/general_title_color"
+        android:layout_width = "match_parent"
+        android:layout_height = "@dimen/general_header_bar_height">
+
+
+    <!-- menu button on left-top corner -->
+    <ImageView
+            android:id = "@+id/general_header_left_btn"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_centerVertical = "true"
+            android:src = "@drawable/to_left_arrow"
+            android:padding = "15dp"/>
+
+    <!-- title text -->
+    <RelativeLayout
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_centerInParent = "true">
+
+        <TextView
+                android:id = "@+id/tv_header_title"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                style = "@style/title_text"
+                android:layout_centerVertical = "true"/>
+
+        <ImageView
+                android:id = "@+id/iv_preference_arrow"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_centerVertical = "true"
+                android:layout_toRightOf = "@id/tv_header_title"
+                android:layout_marginLeft = "4dp"/>
+
+    </RelativeLayout>
+
+
+    <!-- menu button on right-top corner -->
+    <TextView
+            android:id = "@+id/general_header_right_btn"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            style = "@style/default_text"
+            android:textSize = "15sp"
+            android:layout_alignParentRight = "true"
+            android:layout_centerVertical = "true"
+            android:padding = "10dp"/>
+
+    <ImageView
+            android:id = "@+id/general_header_right_btn_iv"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_alignParentRight = "true"
+            android:layout_centerVertical = "true"
+            android:padding = "10dp"/>
+
+
+</RelativeLayout>

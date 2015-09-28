@@ -1,0 +1,199 @@
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+              xmlns:tools = "http://schemas.android.com/tools"
+              android:layout_width = "match_parent"
+              android:layout_height = "match_parent"
+              android:orientation = "vertical"
+              android:background = "@color/app_bg"
+              tools:context = ".MainActivity">
+
+    <!-- header -->
+    <include layout = "@layout/header_bar_general"/>
+
+    <EditText
+            android:visibility = "visible"
+            android:id = "@+id/mobileNumber"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:hint = "@string/typeMobile"
+            style = "@style/edit_type"
+            android:inputType = "number"
+            android:drawableLeft = "@drawable/phone_number_icon1"/>
+
+    <LinearLayout
+            android:visibility = "visible"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_marginTop = "18dp"
+            android:layout_marginLeft = "14dp"
+            android:layout_marginRight = "14dp">
+
+        <EditText
+                android:id = "@+id/smsConfirmCode"
+                android:layout_width = "1dp"
+                android:layout_height = "wrap_content"
+                android:layout_weight = "5"
+                android:hint = "@string/typeSMSConfirmCode"
+                style = "@style/small_edit_type"
+                android:layout_marginTop = "0dp"
+                android:layout_marginLeft = "0dp"
+                android:layout_marginRight = "0dp"
+                android:inputType = "number"
+                android:padding = "9dp"
+                android:drawableLeft = "@drawable/message_password_icon"
+                android:drawablePadding = "10dp"/>
+
+        <TextView
+                android:id = "@+id/btnGetSMSConfirmCode"
+                android:onClick = "onClickGetSMSConfirmCode"
+                android:clickable = "true"
+                android:layout_width = "1dp"
+                android:layout_height = "wrap_content"
+                android:layout_weight = "3"
+                android:layout_marginLeft = "14dp"
+                android:text = "@string/getSMSConfirmCode"
+                style = "@style/small_button_type"
+                android:singleLine = "true"
+                android:ellipsize = "middle"
+                android:gravity = "center"/>
+
+    </LinearLayout>
+
+    <TextView
+            android:visibility = "visible"
+            android:onClick = "onClickNextStep"
+            android:clickable = "true"
+            android:id = "@+id/btnNextStep"
+            android:enabled = "false"
+            android:text = "@string/next"
+            style = "@style/big_button_type"
+            android:layout_marginTop = "18dp"/>
+    <!-- mobile -->
+
+    <!--<LinearLayout style="@style/InputParentView" >-->
+
+    <!--<TextView-->
+    <!--style="@style/InputTextView"-->
+    <!--android:text="@string/mobilenum" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/mobileNumber"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:hint="@string/typeMobile"-->
+    <!--android:inputType="phone">-->
+    <!--</EditText>-->
+    <!--</LinearLayout>-->
+
+    <!--input the SMS confimation code-->
+    <!--<EditText-->
+    <!--android:id="@+id/smsConfirmCode"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:hint="@string/typeSMSConfirmCode"-->
+    <!--android:inputType="number" />-->
+
+    <!--<LinearLayout style="@style/InputParentView" >-->
+
+    <!--<TextView-->
+    <!--style="@style/InputTextView"-->
+    <!--android:text="@string/nickname" />-->
+
+    <!--昵称-->
+    <EditText
+            android:id = "@+id/nickname"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:hint = "@string/nickname"
+            style = "@style/edit_type"
+            android:visibility = "gone"
+            android:inputType = "textPersonName"
+            android:drawableLeft = "@drawable/contact_icon"/>
+    <!--</LinearLayout>-->
+
+    <!-- password -->
+
+    <!--<LinearLayout style="@style/InputParentView" >-->
+
+    <!--<TextView-->
+    <!--style="@style/InputTextView"-->
+    <!--android:text="@string/userpwd" />-->
+
+    <EditText
+            android:id = "@+id/password"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:hint = "@string/password"
+            style = "@style/edit_type"
+            android:visibility = "gone"
+            android:inputType = "textPassword"
+            android:drawableLeft = "@drawable/password_icon"/>
+    <!--</LinearLayout>-->
+
+    <!-- confirm password -->
+
+    <!--<LinearLayout style="@style/InputParentView" >-->
+
+    <!--<TextView-->
+    <!--style="@style/InputTextView"-->
+    <!--android:text="@string/confirmPassword" />-->
+
+    <!--确认密码-->
+    <EditText
+            android:id = "@+id/confirmPass"
+            android:visibility = "gone"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:hint = "@string/confirmPassword"
+            style = "@style/edit_type"
+            android:inputType = "textPassword"
+            android:drawableLeft = "@drawable/password_icon"/>
+    <!--</LinearLayout>-->
+
+
+    <!--<Button-->
+    <!--android:id="@+id/btnGetSMSConfirmCode"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:onClick="onClickGetSMSConfirmCode"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:text="@string/getSMSConfirmCode"-->
+    <!--android:textSize="22sp"/>-->
+
+
+    <!--<Button-->
+    <!--android:id="@+id/btnNextStep"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:onClick="onClickNextStep"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:enabled="false"-->
+    <!--android:text="@string/next"-->
+    <!--android:textSize="22sp"/>-->
+
+    <!-- check box of show/hide password option -->
+    <!--<RelativeLayout style="@style/InputParentView" >-->
+
+    <!--<CheckBox-->
+    <!--android:id="@+id/showPassword"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:onClick="showPasswordClicked"-->
+    <!--android:visibility="gone"-->
+    <!--android:text="@string/showPassword"/>-->
+
+    <TextView
+            android:id = "@+id/btnCreate"
+            android:visibility = "gone"
+            android:onClick = "createBtnClicked"
+            android:clickable = "true"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:enabled = "true"
+            android:text = "@string/registry"
+            style = "@style/big_button_type"
+            android:layout_marginTop = "18dp"/>
+    <!--</RelativeLayout>-->
+
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="android-async-http-1.4.5">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/android-async-http-1.4.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/android-support-v13.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/android_api_1.1_forsdk.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/baidu_galaxy_lite.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/baidu_galaxy_mini.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/baiduLBS_Android.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/CCP_REST_SMS_SDK_JAVA_v2.6.3r.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/com.baidu.speechsynthesizer_1.2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/ecarjingling20150108.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/kwmusic-autosdk-v1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/umeng-analytics.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

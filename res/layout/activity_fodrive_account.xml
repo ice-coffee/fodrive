@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+                xmlns:imagecontrol = "http://schemas.android.com/apk/res-auto"
+                android:orientation = "vertical"
+                android:background = "@color/app_bg"
+                android:layout_width = "match_parent"
+                android:layout_height = "match_parent">
+
+    <include layout = "@layout/header_bar_general"/>
+
+    <com.jinglingtec.ijiazu.ui.RoundImageView
+            android:id = "@+id/iv_self_photo"
+            android:layout_width = "225dp"
+            android:layout_height = "225dp"
+            android:scaleType = "centerCrop"
+            imagecontrol:border_inside_color = "#fff7f2e9"
+            imagecontrol:border_thickness = "2dp"
+            android:layout_below = "@+id/general_header_titlebar"
+            android:layout_centerHorizontal = "true"
+            android:layout_marginTop = "44dp"
+            android:src = "@drawable/head_portrait_big"/>
+
+    <TextView
+            android:id = "@+id/tv_landname"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:text = "@string/account_info"
+            android:textSize = "17sp"
+            android:layout_below = "@id/iv_self_photo"
+            android:layout_centerHorizontal = "true"
+            android:layout_marginTop = "20dp"/>
+
+    <TextView
+            android:id = "@+id/tv_account_state"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:text = "@string/last_data_backup"
+            android:textSize = "14sp"
+            android:textColor = "@color/gray"
+            android:layout_below = "@id/tv_landname"
+            android:layout_centerHorizontal = "true"
+            android:layout_marginTop = "20dp"/>
+
+    <TextView
+            android:onClick = "systemOut"
+            android:clickable = "true"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_centerHorizontal = "true"
+            style = "@style/big_button_type"
+            android:text = "@string/system_out"
+            android:gravity = "center"
+            android:layout_alignParentBottom = "true"
+            android:layout_marginBottom = "44dp"/>
+
+
+</RelativeLayout>

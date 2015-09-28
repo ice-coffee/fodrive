@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+        xmlns:android = "http://schemas.android.com/apk/res/android"
+        package = "com.jinglingtec.ijiazu"
+        android:versionCode = "116"
+        android:versionName = "1.1.6">
+
+    <uses-sdk
+            android:minSdkVersion = "18"
+            android:targetSdkVersion = "18"/>
+
+    <uses-permission android:name = "android.permission.WRITE_CONTACTS"/>
+
+    <uses-permission android:name = "android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name = "android.permission.BAIDU_LOCATION_SERVICE"/>
+    <uses-permission android:name = "android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name = "android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name = "android.permission.INTERNET"/>
+    <uses-permission android:name = "com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name = "android.permission.WAKE_LOCK"/>
+    <uses-permission android:name = "android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name = "android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name = "android.permission.ACCESS_GPS"/>
+    <uses-permission android:name = "android.permission.READ_CONTACTS"/>
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name = "android.permission.GET_TASKS"/>
+    <uses-permission android:name = "android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name = "android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name = "android.permission.WRITE_SETTINGS"/>
+    <!-- 来电消音 -->
+    <uses-permission android:name = "android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name = "android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name = "android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name = "android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name = "android.permission.BLUETOOTH"/>
+    <uses-permission android:name = "android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name = "android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name = "android.permission.CALL_PHONE"/>
+    <uses-permission android:name = "android.permission.READ_LOGS"/>
+    <uses-permission android:name = "android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name = "android.permission.CHANGE_CONFIGURATION"/>
+    <!--map定位-->
+    <uses-permission android:name = "android.permission.ACCESS_MOCK_LOCATION"/>
+    <uses-permission android:name = "android.permission.ACCESS_FINE_LOCATION"/>
+    <!-- <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"></uses-permission> -->
+    <uses-permission android:name = "android.permission.READ_SMS"/>
+    <uses-permission android:name = "android.permission.SEND_SMS"/>
+    <uses-permission android:name = "android.permission.CAMERA"/>
+    <!--读写通话记录权限-->
+    <uses-permission android:name = "android.permission.READ_CALL_LOG"/>
+    <!--ShareSDK-->
+    <uses-permission android:name = "android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name = "android.permission.GET_ACCOUNTS"/>
+
+    <uses-feature
+            android:name = "android.hardware.bluetooth_le"
+            android:required = "true"/>
+
+    <application
+            android:name = ".IjiazuApp"
+            android:label = "@string/app_name"
+            android:theme = "@style/IjiazuAppTheme"
+            android:icon = "@drawable/logo">
+
+        <!-- badu navi api key -->
+        <meta-data
+                android:name = "com.baidu.lbsapi.API_KEY"
+                android:value = "phX1tN7qvquu3p5XAc4mD8ex"/>
+
+        <!-- auto navi api key -->
+        <!--
+        <meta-data
+                android:name="com.amap.api.v2.apikey"
+                android:value="5000c71e7025bd461616a3043546b268"/>
+        -->
+
+        <receiver
+                android:name = ".receivers.IjiazuBootupReceiver"
+                android:enabled = "true"
+                android:exported = "true">
+            <intent-filter>
+                <action android:name = "android.intent.action.BOOT_COMPLETED"/>
+                <category android:name = "android.intent.category.HOME"/>
+                <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+                <!--<category android:name="android.intent.category.DEFAULT" />-->
+            </intent-filter>
+        </receiver>
+
+        <!--来电监听-->
+        <!--<receiver-->
+        <!--android:name=".receivers.IjiazuTelephoneReceiver">-->
+        <!--<intent-filter android:priority="1000">-->
+        <!--<action android:name="android.intent.action.NEW_OUTGOING_CALL"/>-->
+        <!--<action android:name="android.intent.action.PHONE_STATE"/>-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <!--网络状态监听-->
+        <receiver
+                android:name = ".receivers.ConnectionChangeReceiver">
+            <intent-filter>
+                <action android:name = "android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+
+        <service
+                android:name = ".services.IjiazuService"
+                android:process = ":blctor"
+                android:exported = "false"
+                android:enabled = "true"/>
+
+        <service
+
+                android:name = "com.baidu.location.f"
+                android:enabled = "true"
+                android:process = ":remote"/>
+
+        <service
+                android:name = "com.ecar.ecarnet.EcarNetService"
+                />
+
+        <!--<service-->
+        <!--android:name="com.xtremeprog.sdk.ble.BleService"-->
+        <!--android:enabled="true"/>-->
+
+        <service
+                android:name = "com.fodrive.android.BleEventAdapter.service.gatt.GattService"
+                android:process = ":blctor"
+                android:exported = "false"/>
+
+        <service
+                android:name = "com.fodrive.android.BleEventAdapter.service.discovery.device.DeviceDiscoveryService"
+                android:process = ":blctor"
+                android:exported = "false"/>
+
+        <!--电话服务-->
+        <service android:name = ".services.TelephoneService"/>
+
+        <!-- Service_SaveLog 保存日志的服务 -->
+        <service
+                android:name = "com.fodrive.demo.service.Service_SaveLog"
+                android:process = "cn.fodrive.log.savelog">
+        </service>
+
+        <!--
+                        android:name="com.jinglingtec.fodrive.bluetooth.BLECentralActivity"
+        -->
+        <activity
+                android:name = ".activity.IjiazuActivity"
+                android:label = "@string/app_name">
+            <intent-filter>
+                <action android:name = "android.intent.action.MAIN"/>
+                <category android:name = "android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:name = "cn.sharesdk.framework.ShareSDKUIShell"
+                android:theme = "@android:style/Theme.Translucent.NoTitleBar"
+                android:configChanges = "keyboardHidden|orientation|screenSize"
+                android:screenOrientation = "portrait"
+                android:windowSoftInputMode = "stateHidden|adjustResize">
+            <intent-filter>
+                <data android:scheme = "tencent100371282"/>
+                <action android:name = "android.intent.action.VIEW"/>
+
+                <category android:name = "android.intent.category.BROWSABLE"/>
+                <category android:name = "android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <!--微信分享回调 -->
+        <activity
+                android:name = ".activity.WXEntryActivity"
+                android:theme = "@android:style/Theme.Translucent.NoTitleBar"
+                android:configChanges = "keyboardHidden|orientation|screenSize"
+                android:exported = "true"
+                android:screenOrientation = "portrait"/>
+
+        <activity
+                android:name = ".activity.AboutActivity"
+                android:launchMode = "singleTask"
+                android:screenOrientation = "portrait"/>
+
+        <activity
+                android:name = ".accountmgr.AccountHomeActivity"
+                android:launchMode = "singleTask"
+                android:screenOrientation = "portrait"/>
+
+        <activity
+                android:name = ".invokeApps.baidunavi.BNavigatorActivity"
+                android:launchMode = "singleTask"
+                android:screenOrientation = "portrait"/>
+
+        <activity
+                android:name = ".invokeApps.baidunavi.RoutePlanActivity"
+                android:launchMode = "singleTask"
+                android:screenOrientation = "portrait"/>
+
+        <activity
+                android:name = ".invokeApps.baidunavi.PoiSearchActivity"
+                android:launchMode = "singleTask"
+                android:screenOrientation = "portrait"/>
+
+        <activity
+                android:name = ".invokeApps.baidunavi.PoiSearchResultActivity"
+                android:launchMode = "singleTask"
+                android:screenOrientation = "portrait"/>
+
+        <!--<activity-->
+        <!--android:name=".invokeApps.baidunavi.OfflineActivity"-->
+        <!--android:launchMode="singleTask"-->
+        <!--android:screenOrientation="portrait"/>-->
+
+        <!--<activity-->
+        <!--android:name=".invokeApps.baidunavi.OfflineBaseMapActivity"-->
+        <!--android:launchMode="singleTask"-->
+        <!--android:screenOrientation="portrait"/>-->
+
+        <activity
+                android:name = ".invokeApps.baidunavi.BaiduNavimainActivity"
+                android:launchMode = "singleTask"
+                android:screenOrientation = "portrait"/>
+
+        <!--<activity-->
+        <!--android:name=".activity.EcarMainActivity"-->
+        <!--android:launchMode="singleTask"-->
+        <!--android:screenOrientation="portrait"/>-->
+        <!--<activity-->
+        <!--android:name=".accountmgr.RegisterActivity"-->
+        <!--android:launchMode="singleTask"-->
+        <!--android:screenOrientation="portrait"/>-->
+
+        <activity
+                android:name = ".activity.SettingActivity"
+                android:launchMode = "singleTask"
+                android:screenOrientation = "portrait"/>
+
+        <!--<activity-->
+        <!--android:name=".invokeApps.baidunavi.BaiduNaviTest"/>-->
+
+        <!--<activity-->
+        <!--android:name=".invokeApps.baidunavi.GPSTest"-->
+        <!--android:launchMode="singleTask"-->
+        <!--android:screenOrientation="portrait"/>-->
+        <activity
+                android:name = ".accountmgr.CreateAccountActivity"
+                android:launchMode = "singleTask"
+                android:screenOrientation = "portrait"/>
+
+        <activity
+                android:name = ".accountmgr.LoginActivity"
+                android:launchMode = "singleTask"
+                android:screenOrientation = "portrait"/>
+
+        <activity
+                android:name = ".accountmgr.ForgotPasswordActivity"
+                android:launchMode = "singleTask"
+                android:screenOrientation = "portrait"/>
+
+        <activity
+                android:name = ".invokeApps.fm.FCListActivity"
+                android:launchMode = "singleTask"
+                android:screenOrientation = "portrait"/>
+
+        <activity
+                android:name = ".invokeApps.fm.FMActivity"
+                android:launchMode = "singleTask"
+                android:screenOrientation = "portrait"/>
+
+        <activity
+                android:name = ".invokeApps.baidunavi.OfflineMapActivity"
+                android:launchMode = "singleTask"
+                android:screenOrientation = "portrait"/>
+
+        <activity
+                android:name = ".activity.FeedBackActivity"
+                android:launchMode = "singleTask"
+                android:screenOrientation = "portrait"/>
+
+        <activity
+                android:name = ".invokeApps.telephone.TelephoneEditActivity"
+                android:launchMode = "standard"
+                android:screenOrientation = "portrait"/>
+
+        <activity
+                android:name = ".invokeApps.music.MusicActivity"
+                android:launchMode = "singleTask"
+                android:screenOrientation = "portrait"/>
+
+        <activity
+                android:name = ".activity.AgreementActivity"
+                android:launchMode = "singleTask"
+                android:screenOrientation = "portrait"/>
+        <!--
+        <activity
+                android:name=".invokeApps.autonavi.AutoNaviActivity"
+                android:launchMode="singleTask"
+                android:screenOrientation="portrait" />
+
+        <activity
+                android:name=".invokeApps.autonavi.AutoNaviSettingActivity"
+                android:launchMode="singleTask"
+                android:screenOrientation="portrait" />
+
+        <activity
+                android:name=".invokeApps.autonavi.AutoNaviSelectFavoriteActivity"
+                android:launchMode="singleTop"
+                android:screenOrientation="portrait" />
+
+
+        <activity
+                android:name=".invokeApps.autonavi.AutoNavigationActivity"
+                android:launchMode="singleTask"
+                android:screenOrientation="portrait" />
+        -->
+
+        <!-- BLECentralActivity  for BLE test purpose-->
+        <!--<activity-->
+        <!--android:name="com.jinglingtec.fodrive.bluetooth.BLECentralActivity"-->
+        <!--android:launchMode="singleTask"-->
+        <!--android:screenOrientation="portrait" />-->
+
+        <!-- Telephone activity -->
+        <activity
+                android:name = ".invokeApps.telephone.TelephoneActivity"
+                android:launchMode = "singleTask"
+                android:screenOrientation = "portrait"/>
+
+        <activity
+                android:name = ".activity.RegisterEcarActivity"
+                android:launchMode = "singleTask"
+                android:screenOrientation = "portrait"/>
+
+        <!-- guideline activity -->
+        <activity
+                android:name = ".activity.GuidelineActivity"
+                android:launchMode = "singleTask"
+                android:screenOrientation = "portrait"/>
+
+        <!-- splash screen activity -->
+        <activity
+                android:name = ".activity.SplashscreenActivity"
+                android:launchMode = "singleTask"
+                android:screenOrientation = "portrait"/>
+
+        <!-- 友盟（分析） -->
+        <meta-data
+                android:name = "UMENG_APPKEY"
+                android:value = "5434b7a3fd98c57050005d7e">
+        </meta-data>
+
+        <meta-data
+                android:name = "UMENG_CHANNEL"
+                android:value = "ijiazu">
+        </meta-data>
+
+
+    </application>
+
+</manifest>
+

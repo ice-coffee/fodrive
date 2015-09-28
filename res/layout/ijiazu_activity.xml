@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android = "http://schemas.android.com/apk/res/android"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:background = "@drawable/homepage_bg_yika1">
+
+    <ImageView
+            android:id = "@+id/bleBatteryLevel"
+            android:visibility = "gone"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_centerHorizontal = "true"
+            android:layout_marginTop = "92dp"
+            android:background = "@drawable/low_battery"/>
+
+    <ImageView
+            android:id = "@+id/bleConnectionState"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_alignParentBottom = "true"
+            android:layout_marginBottom = "59dp"
+            android:layout_marginLeft = "135dp"
+            android:background = "@drawable/bluetooth_error"/>
+
+
+    <!--<Button-->
+    <!--android:text="111111111111"-->
+    <!--android:onClick="abcdClicked"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"/>-->
+
+    <!--<Button-->
+    <!--android:text="connect ble device"-->
+    <!--android:onClick="connectBleClicked"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"/>-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:background="#20360452"-->
+    <!--android:onClick="naviClicked"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<TextView-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:text="@string/navigation"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"/>-->
+
+    <!--<Button-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:drawableTop="@drawable/icon_1_new_d"-->
+    <!--android:text="@string/setting"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"/>-->
+    <!--</RelativeLayout>-->
+
+    <TextView
+            android:id = "@+id/tv_home_center"
+            android:onClick = "onFoKeyClicked"
+            android:clickable = "true"
+            android:layout_width = "60dp"
+            android:layout_height = "60dp"
+            android:layout_centerInParent = "true"/>
+
+    <ImageView
+            android:id = "@+id/iv_fodrive_phone"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:onClick = "onTelphoneClicked"
+            android:background = "@drawable/selector_phone"
+            android:layout_centerHorizontal = "true"
+            android:layout_above = "@id/tv_home_center"
+            android:layout_marginBottom = "47dp"/>
+
+    <ImageView
+            android:id = "@+id/iv_fodrive_navi"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:onClick = "onNavigationClicked"
+            android:background = "@drawable/selector_navi"
+            android:layout_centerHorizontal = "true"
+            android:layout_below = "@id/tv_home_center"
+            android:layout_marginTop = "47dp"/>
+
+
+    <ImageView
+            android:id = "@+id/iv_fodrive_music"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:onClick = "onMusicClicked"
+            android:background = "@drawable/selector_music"
+            android:layout_centerVertical = "true"
+            android:layout_toRightOf = "@id/tv_home_center"
+            android:layout_marginLeft = "47dp"/>
+
+    <ImageView
+            android:id = "@+id/iv_fodrive_fm"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:onClick = "onFMClicked"
+            android:background = "@drawable/selector_fm"
+            android:layout_centerVertical = "true"
+            android:layout_toLeftOf = "@id/tv_home_center"
+            android:layout_marginRight = "47dp"/>
+
+    <ImageView
+            android:id = "@+id/iv_fodrive_setting"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:onClick = "onSettingClicked"
+            android:src = "@drawable/selector_setting"
+            android:padding = "15dp"
+            android:layout_marginLeft = "6dp"/>
+
+    <ImageView
+            android:id = "@+id/iv_fodrive_share"
+            android:visibility = "gone"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:onClick = "onShareCLicked"
+            android:src = "@drawable/share_icon"
+            android:layout_alignParentRight = "true"
+            android:padding = "15dp"
+            android:layout_marginRight = "6dp"/>
+
+</RelativeLayout>
+
+

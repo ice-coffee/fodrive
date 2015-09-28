@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+                android:layout_width = "match_parent"
+                android:layout_height = "46dp">
+
+    <TextView
+            android:id = "@+id/tv_ol_city_name"
+            android:layout_width = "wrap_content"
+            android:layout_height = "69dp"
+            android:text = "@string/offline_name"
+            android:layout_centerVertical = "true"
+            android:layout_marginLeft = "14dp"
+            android:textSize = "14sp"
+            android:textColor = "@color/black"
+            android:gravity = "center_vertical"/>
+
+    <ImageView
+            android:id = "@+id/iv_ol_control"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_centerVertical = "true"
+            android:background = "@drawable/delete_button"
+            android:layout_alignParentRight = "true"
+            android:layout_marginRight = "16dp"/>
+
+
+    <TextView
+            android:id = "@+id/tv_ol_loadding"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_toLeftOf = "@id/iv_ol_control"
+            android:layout_centerVertical = "true"
+            android:layout_marginRight = "5dp"/>
+
+    <TextView
+            android:id = "@+id/tv_ol_size"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:text = "@string/offline_map_size"
+            android:textSize = "14sp"
+            android:layout_toLeftOf = "@id/tv_ol_loadding"
+            android:layout_centerVertical = "true"
+            android:layout_marginRight = "5dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name = "transparent">@android:color/transparent</color>
+
+    <color name = "white">#FFFFFF</color>
+    <color name = "blue">#FF0000FF</color>
+    <color name = "green">#FF00FF00</color>
+    <color name = "red">#FFFF0000</color>
+    <color name = "gray">#FF808080</color>
+
+    <!-- some common colors -->
+    <!--#fcdc00-->
+    <color name = "general_title_transparent">#32000000</color>
+    <color name = "phone_kuang">#FFFFFE</color>
+    <color name = "general_title_color">#333333</color>
+    <color name = "black">#000000</color>
+    <color name = "little_black">#88000000</color>
+    <item name = "blue" type = "drawable">#51C4FD</item>
+
+    <color name = "text_color">#b0b0b0</color>
+    <color name = "collection_color">#6f6f6f</color>
+    <color name = "load_color">#009ef8</color>
+    <color name = "app_bg">#e9e9e9</color>
+
+</resources>
+
+

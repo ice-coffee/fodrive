@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+              android:orientation = "vertical"
+              android:layout_width = "match_parent"
+              android:layout_height = "match_parent">
+
+    <include layout = "@layout/header_bar_general"/>
+
+
+    <TextView
+            android:layout_width = "match_parent"
+            android:layout_height = "24dp"
+            android:text = "@string/all_city"
+            android:textSize = "11sp"
+            android:textColor = "@color/white"
+            android:background = "#b0b0b0"
+            android:gravity = "center_vertical"
+            android:paddingLeft = "14dp"
+            android:paddingRight = "14dp"/>
+
+    <ListView
+            android:id = "@+id/lv_hot_map"
+            android:layout_width = "match_parent"
+            android:layout_height = "1dp"
+            android:layout_weight = "1"/>
+
+</LinearLayout>

@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name = "app_name">i驾族</string>
+    <string name = "i_cloud">i云端</string>
+    <string name = "system_out">退出</string>
+
+
+    <string name = "back">返回</string>
+    <string name = "start">开始扫描</string>
+    <string name = "clear">清除信息</string>
+    <string name = "info">信息</string>
+    <string name = "battery">电池电量</string>
+
+    <!-- general definitions -->
+    <string name = "navigation">导航</string>
+    <string name = "music">音乐</string>
+    <string name = "telephone">电话</string>
+    <string name = "fm">电台</string>
+    <string name = "fo">福</string>
+    <string name = "setting">设置</string>
+
+    <string name = "ok">确定</string>
+    <string name = "cancel">取消</string>
+    <string name = "complete">完成</string>
+    <string name = "next">下一步</string>
+
+    <string name = "app_play">开始</string>
+    <string name = "app_pause">停止</string>
+    <string name = "have_down">人家还需要做什么呢</string>
+    <string name = "not_baidu">小度正在赖床中</string>
+    <string name = "not_duomi">多米正在做出门准备</string>
+    <string name = "not_kaola">考拉正在树上睡觉呢</string>
+    <string name = "not_koudai">口袋故事被塞进口袋拿不出来了</string>
+
+    <string name = "begin_app">启动</string>
+
+    <!--FM-->
+    <string name = "open_fm">打开电台</string>
+    <string name = "list_fm">电台列表</string>
+    <string name = "i_please_download_fm">主人,您的电台需要重新下载哦</string>
+    <string name = "please_download_fm">要点击大图下载此电台后您才能使用</string>
+    <string name = "login_app">启动</string>
+    <string name = "app_pre">下个电台</string>
+    <string name = "fm_qingting">蜻蜓FM</string>
+    <string name = "runing_fm">正在使用 蜻蜓FM</string>
+    <string name = "not_have_fm">尚未下载 蜻蜓FM</string>
+    <string name = "to_download_fm">点击图标跳转下载 蜻蜓FM</string>
+
+    <!--mv-->
+    <string name = "open_music">打开音乐</string>
+    <string name = "music_list">音乐列表</string>
+    <string name = "i_please_download_music">主人,您的需要下载可口的音乐啊</string>
+    <string name = "please_download_music">要点击大图下载此音乐后您才能使用</string>
+    <string name = "kuwo_music">酷我音乐</string>
+    <string name = "runing_mv">正在使用 酷我音乐</string>
+    <string name = "not_have_mv">尚未下载 酷我音乐</string>
+    <string name = "to_download_mv">点击图标跳转下载 酷我音乐</string>
+
+    <!-- telephone -->
+    <string name = "set_the_phone">请先设定亲情号码</string>
+    <string name = "no_phone">主人,您想打给谁呢？</string>
+    <string name = "set_phone_success">设置成功</string>
+    <string name = "collection_phone_name">收藏电话名称</string>
+    <string name = "write_telephone_number">联系人</string>
+    <string name = "write_number">电话号码</string>
+    <string name = "write_telephone">手动输入电话</string>
+    <string name = "telephone_name">名称名称</string>
+    <string name = "call_phone">呼叫</string>
+    <string name = "call_to">打电话给</string>
+    <string name = "phone_edit">编辑</string>
+    <string name = "to_the_telephone">来电话了</string>
+    <string name = "unknow_telephone">此电话未知</string>
+    <string name = "telephone_number">10086</string>
+    <string name = "tel_single_click">单击</string>
+    <string name = "tel_double_click">双击</string>
+    <string name = "tel_long_press">长按</string>
+
+    <!--navi-->
+    <string name = "select_search_city">请选择下列城市进行搜索</string>
+    <string name = "title">标题</string>
+    <string name = "search">搜索</string>
+    <string name = "search_point">搜索地点</string>
+    <string name = "search_restlt">搜索到的地址</string>
+    <string name = "history_record">历史记录</string>
+    <string name = "save">收藏</string>
+    <string name = "collection_address">收藏地址</string>
+    <string name = "collection_successs">收藏成功</string>
+    <string name = "collected_successs">这个地方已经小i的兜兜里了</string>
+    <string name = "save_manager">收藏管理</string>
+    <string name = "want_go">我想去</string>
+    <string name = "search_address">搜地点、找路线</string>
+    <string name = "named_address">请输入要收藏地址的名称</string>
+    <string name = "no_keyword">没有输入关键字小i也是醉了！</string>
+    <string name = "not_search_result">对不起，小i正在疯狂查找中</string>
+    <string name = "search_failure">对不起，小i没有查到</string>
+    <string name = "please_address_name">不起名字的话它会生气哦,亲！</string>
+    <string name = "to_navi">一键导航</string>
+    <string name = "like">导航偏好</string>
+    <string name = "like_avoid_taffic">躲避拥堵</string>
+    <string name = "like_min_toll">最少收费</string>
+    <string name = "like_min_time">最短时间</string>
+    <string name = "like_min_dist">最短距离</string>
+    <string name = "like_recommend">推荐路径(默认)</string>
+    <string name = "collection_management">收藏管理</string>
+    <string name = "data_management">数据管理</string>
+    <string name = "offline_map">离线地图</string>
+    <string name = "demo_title_offline">离线地图功能--OfflineDemo</string>
+    <string name = "demo_desc_offline">介绍如何下载和使用离线地图</string>
+    <string name = "demo_name_poi">POI搜索功能</string>
+    <string name = "demo_title_poi">POI搜索功能--POISearchDemo</string>
+    <string name = "please_search">没有搜索的话是没有结果的哦！亲！</string>
+    <string name = "demo_desc_poi">介绍关键词查询、suggestion查询和查看餐饮类Place详情页功能</string>
+    <string name = "demo_name_route">路径规划功能</string>
+    <string name = "route_failure">算路失败</string>
+    <string name = "demo_title_route">路径规划功能--RoutePlanDemo</string>
+    <string name = "demo_desc_route">介绍公交、驾车和步行三种线路规划方法和自设路线方法</string>
+    <string name = "demo_name_geocode">地理编码功能</string>
+    <string name = "demo_title_geocode">地理编码功能--GeoCodeDemo</string>
+    <string name = "demo_desc_geocode">介绍地址信息与坐标之间的相互转换</string>
+    <string name = "my_location">我的位置</string>
+    <string name = "select_location_map">地图选点</string>
+    <string name = "collection">收藏夹</string>
+    <string name = "collect">收藏</string>
+    <string name = "no_internet">没有网络,小i迷路了</string>
+    <string name = "no_search_result">对不起,小i迷路了,什么也没找到</string>
+
+
+    <string name = "navi_close">导航结束</string>
+    <string name = "navi_start">导航开始。</string>
+    <string name = "destination">目的地</string>
+    <string name = "planSuccess">路径规划成功</string>
+
+    <!--poisearch-->
+    <string name = "xlistview_header_hint_normal">下拉刷新</string>
+    <string name = "xlistview_header_hint_ready">松开刷新数据</string>
+    <string name = "xlistview_header_hint_loading">正在加载...</string>
+    <string name = "xlistview_header_last_time">上次更新时间：</string>
+    <string name = "xlistview_footer_hint_normal">查看更多</string>
+    <string name = "xlistview_footer_hint_ready">松开载入更多</string>
+
+    <!--offline_map-->
+    <string name = "busy_city">热门城市</string>
+    <string name = "all_city">全部城市</string>
+    <string name = "offline_name">离线城市名</string>
+    <string name = "offline_map_size">地图大小</string>
+    <string name = "start_load">0%</string>
+    <string name = "down_load">正在下载</string>
+    <string name = "have_download">已下载</string>
+
+    <!--main-->
+    <string name = "request_delete">亲！你真的要删掉我吗？</string>
+    <string name = "address_no_set">亲！还没有设定呦！</string>
+    <string name = "save_address_home">家</string>
+    <string name = "save_address_company">公司</string>
+
+    <!--导航-->
+    <string name = "please_set_end_address">请先设置终点</string>
+    <string name = "please_set_start_address">请先初始化导航</string>
+    <string name = "distance_near">距离太近了</string>
+    <string name = "in">在</string>
+    <string name = "find_result">找到结果</string>
+    <string name = "sorry_not_find">抱歉，未找到结果</string>
+    <string name = "saved">位置已保存</string>
+
+    <!--个人信息-->
+    <string name = "hand_picture">头像</string>
+    <string name = "login_name">登录名</string>
+    <string name = "nickname">昵称</string>
+    <string name = "change_info">修改用户资料</string>
+    <string name = "local_photo">选择本地图片</string>
+    <string name = "take_photo">拍照</string>
+    <string name = "set_hand_picture">设置头像</string>
+    <string name = "not_find_SDCard">未找到存储卡</string>
+
+    <!--setting-->
+    <string name = "cloud_storage">登录i云端,随时在云上存储您的数据</string>
+    <string name = "setting_title">我是标题</string>
+    <string name = "setting_content">我是内容</string>
+    <string name = "show_state_notice">是否在通知栏显示状态</string>
+    <string name = "down_file_nowifi">仅WiFi下载</string>
+    <string name = "open_wifi_down">小i会保护好主人的流量的</string>
+    <string name = "version">版本</string>
+    <string name = "quick_buy">快速购买通道</string>
+    <string name = "local_version">当前版本</string>
+    <string name = "local_version_name">1.0.0</string>
+    <string name = "frush_version">刷新版本</string>
+    <string name = "blue_tooth">蓝牙</string>
+    <string name = "feed_back">反馈</string>
+    <string name = "feed_back_success">小i会努力改正的</string>
+    <string name = "feed_back_false">小i没有接收到您的反馈哦</string>
+    <string name = "exmail_phone">电子邮箱/电话号码</string>
+    <string name = "feed_back_content">请输入反馈内容</string>
+    <string name = "submit_content">小i已经听到了主人的话,小i会继续努力的</string>
+    <string name = "fodrive_about">about</string>
+    <string name = "about">关于</string>
+    <string name = "i_account_feedback">i驾族用户反馈</string>
+    <string name = "fodrive_help">帮助</string>
+    <string name = "yes">是</string>
+    <string name = "no">否</string>
+    <string name = "account_info">注册用户信息/电话号码</string>
+    <string name = "last_data_backup">上次数据备份于 --.--.--</string>
+    <string name = "choose_album">从相册选择</string>
+    <string name = "taking_pictures">拍照</string>
+
+    <!--feedback-->
+    <string name = "feedding_back">正在提交,请稍等</string>
+    <string name = "style_false">邮箱或电话格式错误</string>
+    <string name = "null_content">您想告诉小i什么呢</string>
+    <string name = "content_less">让暴风雨来的更猛烈些吧</string>
+
+    <!--about-->
+    <string name = "local_version_code">当前版本:</string>
+    <string name = "call_me">联系我们</string>
+    <string name = "copyright_information">版权信息</string>
+    <string name = "ijiazu_email">电子邮箱:</string>
+    <string name = "service_email">service@jinglingtec.com</string>
+    <string name = "service_agreement">许可及服务协议</string>
+    <string name = "copy_have">Copyright © 2014 ijiazu All Rights Reserved</string>
+    <string name = "ijiazu_home">主页:</string>
+    <string name = "jl_url">http://www.ijiazu.com</string>
+    <string name = "specific_agrement">
+        服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议
+        服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议
+        服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议
+        服务协议服务协议服务协议服务协议服务协议服务协议服务协议
+        服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议
+        服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议
+    </string>
+
+    <!--ecar-->
+    <string name = "ecar_service">翼卡服务</string>
+    <string name = "please_register_ecar">请先注册翼卡人工服务</string>
+    <string name = "write_local_phone">请输入本机号码</string>
+    <string name = "ecar_receive_little">好像没有接收到信息，请主人重新联系客服</string>
+    <string name = "ecar_not_register">主人还没有注册呢</string>
+    <string name = "ecar_register">翼卡服务</string>
+    <string name = "have_registered">您已注册翼卡服务</string>
+    <string name = "register_success">注册成功</string>
+
+    <!--登录注册-->
+    <string name = "write_phone_number">输入手机号</string>
+    <string name = "write_password">输入密码</string>
+    <string name = "forget_password">忘记密码</string>
+    <string name = "weibo_login">微博登录</string>
+    <string name = "weixin_login">微信登录</string>
+    <string name = "QQ_login">QQ登录</string>
+    <string name = "user_register">新用户注册</string>
+
+    <!--找回密码-->
+    <string name = "register_number">输入注册电话号码</string>
+    <string name = "sms_code">输入短信验证码</string>
+    <string name = "reset_password">重新设置密码</string>
+    <string name = "change_password_success">修改密码成功</string>
+
+    <!-- favorite address -->
+    <string name = "home_title">家</string>
+    <string name = "work_title">单位</string>
+    <string name = "finish">完成</string>
+    <string name = "sdk_name">Baidu Navigation SDK Demo</string>
+    <string-array name = "sdkapi_items">
+        <item>关键字搜索</item>
+        <item>周边搜索</item>
+        <item>手机语音识别</item>
+        <item>外部语音流识别</item>
+        <item>TTS</item>
+        <item>反GEO</item>
+        <item>线路规划demo1</item>
+        <item>线路规划demo2</item>
+        <item>离线数据管理</item>
+        <item>自定义图层</item>
+    </string-array>
+    <string name = "search_start">搜索</string>
+    <string name = "search_tips">离线检索需要使用"导航离线数据下载"demo下载数据之后才能正常使用！检索范围固定为广东省-深圳市，其他城市请修改demo源代码。</string>
+    <string name = "antigeo_tips">离线反geo需要使用"导航离线数据下载"demo下载数据之后才能正常使用！</string>
+    <string name = "asr_tips">语音识别需要使用"导航离线数据下载"demo下载广东数据之后才能正常使用！其他城市请修改demo源代码。</string>
+    <string name = "suggest_start">提示</string>
+    <string name = "search_hint">请输入关键字</string>
+    <string name = "record_recording">\u2026正在录音\u2026</string>
+    <string name = "record_recognizing">\u2026正在识别\u2026</string>
+    <string name = "voiceinput">外部语音流识别</string>
+    <string name = "voicenormal">手机语音流识别</string>
+    <string name = "keyword_search">关键字搜索</string>
+    <string name = "space_search">周边搜索</string>
+    <string name = "search_result">搜索结果</string>
+    <string name = "search_empty">识别结果为空</string>
+    <string name = "search_fail">识别无效</string>
+    <string name = "record_start">点击开启</string>
+
+    <!-- 离线数据管理 -->
+    <string name = "title_route_guide_demo">1. GPS导航(RouteGuideDemo)</string>
+    <string name = "title_route_plan_demo">2. 路线规划(RoutePlanDemo)</string>
+    <string name = "title_cruiser">3. 电子狗(CruiserDemo)</string>
+    <string name = "title_layer">4. 自定义地图图层(MapLayerDemo)</string>
+    <string name = "title_offline_data">5. 导航离线数据下载(DownloadDemo)</string>
+    <string name = "title_keyword_search">6. POI搜索-关键字(KeySearchDemo)</string>
+    <string name = "title_nearby">7. POI搜索-分类(CatalogSearchDemo)</string>
+    <string name = "title_degeo">8. 反GEO(ReverseGeoDemo)</string>
+    <string name = "title_tts">9. TTS-Text To Speech(TTSDemo)</string>
+    <string name = "title_asr">10. 语音识别(VoiceDemo)</string>
+    <string name = "title_asr_input">11. 外部语音识别(VoiceInputDemo)</string>
+    <string name = "title_key_verify_demo">12. 密钥验证(KeyVerifyDemo)</string>
+    <string name = "title_charset_change_demo">13. 简体繁体转换(CharsetChangeDemo)</string>
+    <string name = "online">在线</string>
+    <string name = "offline">离线</string>
+    <string name = "confirm_remove_city_map">您确定要删除这个地图吗？</string>
+
+    <!-- 繁体简体切换 -->
+    <string name = "change_to_simplified">地图切换为简体</string>
+    <string name = "change_to_traditional">地图切换为繁体</string>
+    <string name = "change_to_simplified_tips">已切换为简体，请在地图图层页看效果</string>
+    <string name = "change_to_traditional_tips">已切换为繁体，请在地图图层页看效果</string>
+
+    <string name = "new_version_ticker_text">亲们, i驾族又发新版本啦~ 立即下载体验吧!</string>
+    <string name = "confirm_quit_ijiaqu">您确定要退出i驾族吗？</string>
+
+    <!--account manager -->
+    <string name = "registry">注册</string>
+    <string name = "new_registry">新用户注册</string>
+    <string name = "new_acc_registry">注册新用户</string>
+    <string name = "registrySucc">创建帐号成功</string>
+    <string name = "invalideMobile">请输入号码</string>
+    <string name = "invalideNickName">请输入昵称</string>
+    <string name = "invalidePassword">请输入有效的密码</string>
+    <string name = "passwordNotMatch">密码不匹配</string>
+    <string name = "creatingAccount">请稍等，正在创建帐号</string>
+    <string name = "login">登录</string>
+    <string name = "loginSucc">登录成功</string>
+    <string name = "loginfailed">请输入正确的11位手机号和密码登录</string>
+    <string name = "duringLogin">请稍等，正在登录...</string>
+
+
+    <string name = "passwordback">密码找回</string>
+    <string name = "forgotPassword">忘记密码</string>
+    <string name = "confirmPassword">确认密码</string>
+    <string name = "showPassword">显示密码</string>
+    <string name = "changePassword">完成</string>
+    <string name = "typeSMSConfirmCode">短信验证码</string>
+    <string name = "getSMSConfirmCode">获取验证码</string>
+    <string name = "getSMSConfirmCodeAgain">重新获取</string>
+    <string name = "smsVerifyInfoTmpl">[i驾族]您的短信验证码是：</string>
+    <string name = "loginSinaWeibo">新浪微博登录</string>
+    <string name = "loginWechat">微信登录</string>
+    <string name = "loginQQ">QQ登录</string>
+    <string name = "invalidSMSVerifyCode">验证码不正确</string>
+    <string name = "smsVerifySuccess">短信验证成功</string>
+
+    <!--login-->
+    <string name = "typeMobile">11位手机号码</string>
+    <string name = "password">密码</string>
+
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        xmlns:android = "http://schemas.android.com/apk/res/android"
+        android:orientation = "vertical"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:background = "@color/app_bg">
+
+    <include layout = "@layout/header_bar_general"/>
+
+    <ImageView
+            android:id = "@+id/iv_about_logo"
+            android:layout_below = "@+id/general_header_titlebar"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:background = "@drawable/about_logo"
+            android:layout_centerHorizontal = "true"
+            android:layout_marginTop = "28dp"/>
+
+    <TextView
+            android:id = "@+id/tv_about_service_code"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_below = "@id/iv_about_logo"
+            android:layout_centerHorizontal = "true"
+            android:layout_marginTop = "72dp"
+            android:text = "@string/service_email"/>
+
+    <TextView
+            android:id = "@+id/tv_about_service_agreement"
+            android:onClick = "serviceAgreement"
+            android:clickable = "true"
+            android:layout_above = "@+id/tv_about_copy_have"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_centerHorizontal = "true"
+            android:padding = "10dp"
+            android:text = "@string/service_agreement"/>
+
+    <TextView
+            android:id = "@+id/tv_about_copy_have"
+            android:layout_above = "@+id/tv_about_service_exmail"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_centerHorizontal = "true"
+            android:padding = "8dp"
+            android:text = "@string/copy_have"/>
+
+    <LinearLayout
+            android:id = "@+id/tv_about_service_exmail"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_above = "@+id/tv_about_url"
+            android:onClick = "sendEmail"
+            android:clickable = "true"
+            android:layout_centerHorizontal = "true"
+            android:padding = "8dp"
+            android:orientation = "horizontal">
+
+        <TextView
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:text = "@string/ijiazu_email"
+                android:textColor = "@color/gray"/>
+
+        <TextView
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:text = "@string/service_email"
+                android:textColor = "@color/blue"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id = "@+id/tv_about_url"
+            android:onClick = "jlUrl"
+            android:clickable = "true"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_centerHorizontal = "true"
+            android:layout_alignParentBottom = "true"
+            android:padding = "10dp"
+            android:layout_marginBottom = "8dp">
+
+        <TextView
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:text = "@string/ijiazu_home"
+                android:textColor = "@color/gray"/>
+
+        <TextView
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:text = "@string/jl_url"
+                android:textColor = "@color/blue"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

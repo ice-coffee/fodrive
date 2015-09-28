@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+              xmlns:tools = "http://schemas.android.com/tools"
+              android:layout_width = "fill_parent"
+              android:layout_height = "fill_parent"
+              android:orientation = "vertical"
+              android:background = "@color/app_bg"
+              tools:context = ".MainActivity">
+
+    <!-- header -->
+    <include layout = "@layout/header_bar_general"/>
+    <!-- mobile -->
+
+    <!--<LinearLayout style="@style/InputParentView" >-->
+
+    <!--<TextView-->
+    <!--style="@style/InputTextView"-->
+    <!--android:text="@string/mobilenum" />-->
+
+    <EditText
+            android:id = "@+id/loginMobile"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:hint = "@string/typeMobile"
+            style = "@style/edit_type"
+            android:inputType = "phone"
+            android:drawableLeft = "@drawable/contact_icon"
+            android:drawablePadding = "10dp">
+    </EditText>
+    <!--</LinearLayout>-->
+
+    <!-- password -->
+
+    <!--<LinearLayout style="@style/InputParentView" >-->
+
+    <!--<TextView-->
+    <!--style="@style/InputTextView"-->
+    <!--android:text="@string/userpwd" />-->
+
+    <EditText
+            android:id = "@+id/password"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:hint = "@string/password"
+            style = "@style/edit_type"
+            android:inputType = "textPassword"
+            android:drawableLeft = "@drawable/password_icon"
+            android:drawablePadding = "10dp">
+    </EditText>
+    <!--</LinearLayout>-->
+
+    <TextView
+            android:onClick = "loginBtnClicked"
+            android:clickable = "true"
+            android:text = "@string/login"
+            style = "@style/big_button_type"
+            android:layout_marginTop = "18dp"/>
+
+    <RelativeLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_marginTop = "4dp">
+
+        <TextView
+                android:onClick = "forgotPasswordBtnClicked"
+                android:clickable = "true"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:text = "@string/forgotPassword"
+                style = "@style/default_text_size"
+                android:layout_marginLeft = "4dp"
+                android:padding = "10dp"/>
+
+        <TextView
+                android:onClick = "regBtnClicked"
+                android:clickable = "true"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:text = "@string/new_registry"
+                style = "@style/default_text_size"
+                android:layout_alignParentRight = "true"
+                android:layout_marginRight = "4dp"
+                android:padding = "10dp"/>
+
+
+    </RelativeLayout>
+
+
+    <!--<Button-->
+    <!--android:id="@+id/btnReg"-->
+    <!--android:layout_width="156dp"-->
+    <!--android:layout_height="56dp"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:onClick="regBtnClicked"-->
+    <!--android:text="@string/registry"-->
+    <!--android:textSize="22sp"/>-->
+
+
+    <!--<Button-->
+    <!--android:id="@+id/btnForgotPassword"-->
+    <!--android:layout_width="156dp"-->
+    <!--android:layout_height="56dp"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:onClick="forgotPasswordBtnClicked"-->
+    <!--android:text="@string/forgotPassword"-->
+    <!--android:textSize="22sp"/>-->
+
+    <!--<Button-->
+    <!--android:id="@+id/btnLoginSinaWeibo"-->
+    <!--android:layout_width="156dp"-->
+    <!--android:layout_height="56dp"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:onClick="sinaWeiboBtnClicked"-->
+    <!--android:text="@string/loginSinaWeibo"-->
+    <!--android:textSize="22sp"/>-->
+
+    <!--<Button-->
+    <!--android:id="@+id/btnLoginWechat"-->
+    <!--android:layout_width="156dp"-->
+    <!--android:layout_height="56dp"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:onClick="wechatBtnClicked"-->
+    <!--android:text="@string/loginWechat"-->
+    <!--android:textSize="22sp"/>-->
+
+    <!--<Button-->
+    <!--android:id="@+id/btnLoginQQ"-->
+    <!--android:layout_width="156dp"-->
+    <!--android:layout_height="56dp"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:onClick="qqBtnClicked"-->
+    <!--android:text="@string/loginQQ"-->
+    <!--android:textSize="22sp"/>-->
+
+
+</LinearLayout>
+
+
